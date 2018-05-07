@@ -1,0 +1,358 @@
+		case 9157:
+			switch (c.dialogueAction) {
+			case 1:
+				c.getPlayerAssistant().movePlayer(3551, 9692, 0);
+				break;
+			case 2:
+				c.getPlayerAssistant().movePlayer(2507, 4717, 0);
+				break;
+			case 5:
+				c.getSlayer().giveTask();
+				break;
+			case 6:
+				c.getSlayer().giveTask2();
+				break;
+			case 7:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.MAGE_ARENA, "modern", false);
+				break;
+			case 8:
+				c.getBarrows().resetBarrows();
+				c.sendMessage("Your barrows have been reset.");
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			c.dialogueAction = 0;
+			c.getPlayerAssistant().removeAllWindows();
+			break;
+
+		case 9158:
+			switch (c.dialogueAction) {
+			case 8:
+				c.getPlayerAssistant().fixAllBarrows();
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue four options, first option
+		case 9178:
+			if (c.usingGlory)
+				c.getPlayerAssistant().locationTeleport(WorldConstants.EDGEVILLE, "modern", false);
+			switch (c.dialogueAction) {
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.SLAYER_TOWER, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.EDGEVILLE, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.BARROWS, "modern", false);
+				break;
+			case 20:
+				c.sendMessage("God Wars Dungeon is coming soon.");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue four options, second option
+		case 9179:
+			if (c.usingGlory)
+				c.getPlayerAssistant().locationTeleport(WorldConstants.AL_KHARID, "modern", false);
+			switch (c.dialogueAction) {
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.TAVERLY_DUNGEON, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.VARROCK_MULTI, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.TZHAAR_DUNGEON, "modern", false);
+				break;
+			case 20:
+				c.sendMessage("God Wars Dungeon is coming soon.");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue four options, third option
+		case 9180:
+			if (c.usingGlory)
+				c.getPlayerAssistant().locationTeleport(WorldConstants.KARAMJA, "modern", false);
+			switch (c.dialogueAction) {
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WATERBIRTH_DUNGEON, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WILDERNESS_GREEN_DRAGONS, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.PEST_CONTROL, "modern", false);
+				break;
+			case 20:
+				c.sendMessage("God Wars Dungeon is coming soon.");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue four options, fourth option
+		case 9181:
+			if (c.usingGlory)
+				c.getPlayerAssistant().locationTeleport(WorldConstants.MAGE_ARENA_BANK, "modern", false);
+			switch (c.dialogueAction) {
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.RELLEKKA_ROCK_CRABS, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.MAGE_ARENA_BANK, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.DUEL_ARENA, "modern", false);
+				break;
+			case 20:
+				c.sendMessage("God Wars Dungeon is coming soon.");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue five options, first option
+		case 9190:
+			switch (c.teleAction) {
+			case 1:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.RELLEKKA_ROCK_CRABS, "modern", false);
+				break;
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.BARROWS, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().closeAllWindows();
+				c.sendMessage("God Wars will be added soon.");
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.VARROCK_MULTI, "modern", false);
+				break;
+			case 5:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.FALADOR_MINE, "modern", false);
+				break;
+			default:
+				c.teleAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			switch (c.dialogueAction) {
+			case 10:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.AIR_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 11:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.MIND_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 12:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.NATURE_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue five options, second option
+		case 9191:
+			switch (c.teleAction) {
+			case 1:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.TAVERLY_DUNGEON, "modern", false);
+				break;
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.PEST_CONTROL, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.KING_BLACK_DRAGON_LAIR_GATE, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WILDERNESS_GRAVEYARD, "modern", false);
+				break;
+			case 5:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.TUTORIAL_ISLAND_SMITHING_AREA, "modern", false);
+				break;
+			default:
+				c.teleAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			switch (c.dialogueAction) {
+			case 10:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.MIND_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 11:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.BODY_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 12:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.LAW_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue five options, third option
+		case 9192:
+			switch (c.teleAction) {
+			case 1:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.SLAYER_TOWER, "modern", false);
+				break;
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.TZHAAR_DUNGEON, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WATERBIRTH_DUNGEON, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WILDERNESS_LEVEL_44_OBELISK, "modern", false);
+				break;
+			case 5:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.CATHERBY, "modern", false);
+				break;
+			default:
+				c.teleAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			switch (c.dialogueAction) {
+			case 10:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.WATER_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 11:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.COSMIC_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 12:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.DEATH_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue five options, fourth option
+		case 9193:
+			switch (c.teleAction) {
+			case 1:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.BRIMHAVEN_DUNGEON, "modern", false);
+				break;
+			case 2:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.DUEL_ARENA, "modern", false);
+				break;
+			case 3:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.ROGUES_CASTLE, "modern", false);
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.DEMONIC_RUINS, "modern", false);
+				break;
+			case 5:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.CAMELOT, "modern", false);
+				break;
+			default:
+				c.teleAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			switch (c.dialogueAction) {
+			case 10:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.EARTH_ALTAR, "modern", false);
+				c.dialogueAction = -1;
+				break;
+			case 11:
+				// c.getPA().spellTeleport(2527, 4833, 0); astrals here
+				c.getRunecrafting().craftRunes(2489);
+				c.dialogueAction = -1;
+				break;
+			case 12:
+				// c.getPA().spellTeleport(2464, 4834, 0); bloods here
+				c.getRunecrafting().craftRunes(2489);
+				c.dialogueAction = -1;
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
+
+		// Dialogue five options, fifth option
+		case 9194:
+			switch (c.teleAction) {
+			case 1:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.CRASH_ISLAND, "modern", false);
+				break;
+			case 2:
+				c.sendMessage("Suggest something for this spot on the forums!");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			case 3:
+				c.sendMessage("Suggest something for this spot on the forums!");
+				c.getPlayerAssistant().closeAllWindows();
+				break;
+			case 4:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.ARDOUGNE_LEVER, "modern", false);
+				break;
+			case 5:
+				c.getPlayerAssistant().locationTeleport(WorldConstants.CATHERBY, "modern", false);
+				break;
+			default:
+				c.teleAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			switch (c.dialogueAction) {
+			case 10:
+			case 11:
+				c.dialogueId++;
+				c.getDialogueHandler().sendDialogues(c.dialogueId, 0);
+				break;
+			case 12:
+				c.dialogueId = 17;
+				c.getDialogueHandler().sendDialogues(c.dialogueId, 0);
+				break;
+			default:
+				c.dialogueAction = 0;
+				c.getPlayerAssistant().removeAllWindows();
+				break;
+			}
+			break;
